@@ -16,7 +16,6 @@
   "devDependencies": {
     "@smui/snackbar": "^7.0.0-beta.0",
     "@sveltejs/adapter-auto": "^1.0.0",
-    "@sveltejs/kit": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
     "autoprefixer": "^10.4.13",
@@ -37,6 +36,7 @@
   "type": "module",
   "dependencies": {
     "@sveltejs/adapter-vercel": "^1.0.0",
-    "sveltik": "^0.1.16"
+    "sveltik": "^0.1.16",
+    "@sveltejs/kit": "^1.0.1"
   }
 }
