@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .styled-input {
+    @apply relative bg-none;
+  }
+
+  .styled-input input {
+    @apply border-2 border-white rounded-lg bg-transparent p-4 text-base text-white transition-all duration-150 ease-in-out w-full;
+  }
+
+  .styled-input label {
+    @apply absolute left-4 text-white pointer-events-none translate-y-4 transition-all duration-150 ease-in-out bg-none;
+  }
+
+  .styled-input input:focus,
+  .styled-input input:valid {
+    @apply outline-none border-blue-500;
+  }
+
+  .styled-input input:focus ~ label,
+  .styled-input input:valid ~ label {
+    @apply -translate-y-2/4 scale-90 bg-dark py-0 px-1 text-blue-400;
+  }
+
+  .gradient-bg {
+    @apply w-full h-full bg-gradient-to-tr from-purple-600 via-red-600 to-purple-800;
+    background-size: 400%;
+    animation: gradient-bg 5s ease infinite;
+  }
+}
